@@ -11,7 +11,7 @@
 * Compile:
     * In the terminal, go to the directory where you cloned this repo:
     ```
-    cd ROMS-idealized-setup.git
+    cd ROMS-idealized-setup
     ```
     * Open the compile script `build_roms.sh` in a text editor, and make sure that `export MY_ROMS_SRC=${MY_ROOT_DIR}/roms` points to where the ROMS source you just downloaded is located.
     * To change the ROMS settings (for example to turn off sea ice), define or undefine in the header file `include/idealized.h`. This must be done before compiling.
@@ -29,6 +29,6 @@
     * You need to update the paths VARNAME, GRDNAME, ININAME, BRYNAME, CLMNAME, NUDNAME, SSFNAME, TIDENAME, FRCNAME so they point to the files you just downloaded.
     * You also need to update the output paths in `in_files/roms_202504.in`. Update the paths RSTNAME, HISNAME, AVGNAME, DIANAME and STANAME to where you want your output to be saved. 
     * To run the roms test, you should create a submission script and submit this to your supercomputer. Ask your local system administrator for help writing this for your specific computer. An example of how the roms program can be run is to execute the following command:
-```
-mpprun romsM in_files/roms_202504.in > /path/to/a/log_file
-```
+    ```
+    mpprun romsM in_files/roms_202504.in > /path/to/a/log_file
+    ```
