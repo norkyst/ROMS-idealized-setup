@@ -24,7 +24,7 @@
     ```
     * Check that a new executable (a `romsM` file) is created, by for example using the command `ls -l` and see that the `romsM` file is new.
 * Run:
-    * Before you can run this roms test, you need to download the necessary forcing files. These can be found at INSERT PATH TO THREDDS HERE. Download these to your hpc or computer.
+    * Before you can run this roms test, you need to download the necessary forcing files. These can be found at https://thredds.met.no/thredds/catalog/romshindcast/idealized_data/catalog.html. Download these to your hpc or computer. I recommend to create a similar folder setup as in the catalog, but this has to be done manually at your computer, since you can only download one file a time from thredds.
     * Runtime input settings are located in the `.in`-files in the directory `in_files`. In the file `in_files/roms_202504.in`, among many other things, the paths to the forcing files are set.
     * You need to update the paths VARNAME, GRDNAME, ININAME, BRYNAME, CLMNAME, NUDNAME, SSFNAME, TIDENAME, FRCNAME so they point to the files you just downloaded.
     * You also need to update the output paths in `in_files/roms_202504.in`. Update the paths RSTNAME, HISNAME, AVGNAME, DIANAME and STANAME to where you want your output to be saved. 
